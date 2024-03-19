@@ -1,0 +1,114 @@
+:root{
+  --black-col:#1c2128;
+  --light-col:#cdd9e5;
+  --accent-col:#539bf5;
+  --border-col:#444c56;
+  --color-btn-bg: #373e47;
+  --color-btn-cl:rgba(205,217,229,0.1);
+}
+a:link, a:visited, a:hover, a:active  {
+  text-decoration: none;
+}
+body{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  margin: 0;
+  padding: 0;
+  border-color: var(--border-col);
+  background-color: var(--black-col);
+  color: var(--light-col);
+}
+
+.github-form{
+  border: 1px solid var(--border-col);
+  background-color: var(--black-col);
+  color: var(--light-col);
+  max-width: 300px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 48px;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 4px;
+}
+.github-name{
+  margin: 4px 0;
+}
+.github-login a:link, .github-login a:visited, .github-login a:active{
+  margin: 4px 0;
+  color: var(--accent-col);
+}
+.github-avatar{
+  margin: 8px;
+  border-radius: 42px;
+  width: 240px;
+  height: 240px;
+}
+.github-bio{
+  flex-wrap: wrap;
+  max-width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin: 4px 0;
+}
+#gitHolder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: normal;
+  margin: 8px;
+  box-sizing: border-box;
+}
+hr{
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: var(--border-col);
+}
+#gitForm{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#gitForm input[type="submit"]{
+  padding: 4px 20px;
+  width: 100%;
+  border-color: var(--color-btn-cl);
+  border-radius: 1px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: var(--color-btn-bg);
+  color: var(--light-col);
+}
+#gitForm input[type="text"]{
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border-color: var(--color-btn-cl);
+  border-radius: 1px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: var(--black-col);
+  color: var(--light-col);
+  box-sizing: border-box;
+}
+#gitForm input[type="text"]:valid{
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border-color: var(--border-col);
+  background-color: var(--black-col);
+  color: var(--light-col);
+  box-sizing: border-box;
+}
+#gitForm label{
+  width: 100%;
+  padding: 10px 0;
+  border-color: var(--border-col);
+  background-color: var(--black-col);
+  color: var(--light-col);
+  box-sizing: border-box;
+}
